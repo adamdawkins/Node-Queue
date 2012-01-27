@@ -1,0 +1,7 @@
+h1= title
+p Welcome to #{title}
+
+ul.queues
+	- each queue in queues
+		li.queue
+			#{queue.slug} #{queue.creator}, created at #{queue.created_at}

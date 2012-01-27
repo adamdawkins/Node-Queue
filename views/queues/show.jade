@@ -1,0 +1,15 @@
+h1= title
+p Welcome to #{queue.creator}'s queue
+
+form(method = 'post')
+	label Name
+	input(type = 'text', name = 'name')
+	label Description
+	textarea(name = 'description')
+	input(type = 'submit', value = 'create')
+
+ol#people
+	- each person in queue.people
+		li.person(id='person_'+person._id, data-created_at=person.created_at)
+			span.name #{person.name}
+			span.description #{person.description}

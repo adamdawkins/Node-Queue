@@ -1,0 +1,18 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.person {display:inline; float:right; position:relative; width:120px; height:250px; margin-right:10px; margin-bottom:30px;}
+.person:nth-child(odd){background:url('/images/people/1.jpg') no-repeat;}
+.person:nth-child(even){background:url('/images/people/2.jpg') no-repeat;}
+.person .name {position:absolute; bottom:-20px; width:120px; text-align:center;}
+.person .description {display:none; position:absolute; top:-20px; width:100px;}
+.person:hover .description{display:block;}
+
+.person.new{border:2px solid yellow;}
+
+.person.old{opacity:0.2;}
